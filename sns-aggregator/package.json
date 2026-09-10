@@ -1,0 +1,28 @@
+{
+  "name": "sns-aggregator",
+  "version": "1.0.0",
+  "description": "聚合企业微信、钉钉、邮箱消息的统一workspace",
+  "main": "backend/server.js",
+  "engines": {
+    "node": ">=18.17.1"
+  },
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "better-sqlite3": "^11.3.0",
+    "axios": "^1.7.7",
+    "dingtalk-stream-sdk-nodejs": "^1.0.9",
+    "dotenv": "^16.4.5",
+    "imapflow": "^1.0.161",
+    "mailparser": "^3.7.1",
+    "body-parser": "^1.20.3",
+    "xml2js": "^0.6.2",
+    "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

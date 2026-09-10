@@ -1,0 +1,30 @@
+services:
+  - type: web
+    name: sns-aggregator
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: DINGTALK_APP_KEY
+        sync: false
+      - key: DINGTALK_APP_SECRET
+        sync: false
+      - key: WECOM_CORP_ID
+        sync: false
+      - key: WECOM_AGENT_SECRET
+        sync: false
+      - key: WECOM_AGENT_ID
+        sync: false
+      - key: WECOM_TOKEN
+        sync: false
+      - key: WECOM_ENCODING_AES_KEY
+        sync: false
+      - key: EMAIL_IMAP_HOST
+        sync: false
+      - key: EMAIL_IMAP_PORT
+        sync: false
+      - key: EMAIL_USER
+        sync: false
+      - key: EMAIL_PASSWORD
+        sync: false

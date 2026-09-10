@@ -1,4 +1,5 @@
-const DWClient = require('dingtalk-stream-sdk-nodejs');
+const DWClientModule = require('dingtalk-stream-sdk-nodejs');
+const DWClient = DWClientModule.default || DWClientModule;
 
 const APP_KEY = process.env.DINGTALK_APP_KEY;
 const APP_SECRET = process.env.DINGTALK_APP_SECRET;

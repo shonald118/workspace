@@ -2,6 +2,7 @@ services:
   - type: web
     name: sns-aggregator
     runtime: node
+    rootDir: sns-aggregator
     plan: free
     buildCommand: npm install
     startCommand: npm start
